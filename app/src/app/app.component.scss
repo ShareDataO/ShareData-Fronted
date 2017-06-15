@@ -1,0 +1,57 @@
+$contentMasthColor:#444;
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+	width:83%;
+	max-width:1350px;
+	margin:30px auto;
+	box-sizing:border-box;
+}
+
+.mainContent {
+	background-color:$contentMasthColor;
+	
+}
+
+nav {
+	border-bottom:3px inset $contentMasthColor;
+}
+
+nav a {
+	font-size:1.3em;
+	font-weight:bold;
+
+	padding: 10px 15px;
+	text-decoration:none;
+	margin-top:10px;
+	margin-right:10px;
+	display:inline-block;
+	background-color:$contentMasthColor;
+}
+
+
+nav a:visited, a:link{
+	color:#607D8B;
+}
+
+nav a:hover{
+	color:#039be5;
+	background-color:#CFD8DC;
+}
+
+nav a.active {
+	color:#039be5;
+}
+
+h1 {
+
+	margin:50px auto 30px auto;
+	text-align:center;
+	color:#fc0;	
+
+	font-size:3em;
+	font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:bold;
+
+	transform:rotate(-2.0deg)
+}
