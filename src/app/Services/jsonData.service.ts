@@ -10,6 +10,8 @@ import {
   Observable
 } from 'rxjs';
 
+const config = require('../../../config'); 
+
 @Injectable()
 export class JsonDataService {
   constructor(private http: Http) {}
@@ -17,7 +19,7 @@ export class JsonDataService {
     'Content-Type': 'application/json'
   });
 
-  private apiUrl = 'http://127.0.0.1:3000/datas';
+  private apiUrl = config.getApiUrl();
 
   createJsonData(json: any, describe: string,selectKey:string): Promise < any > {
 
